@@ -24,8 +24,7 @@ Antes de executar o projeto, certifique-se de ter:
 ## 🚀 Como Usar  
 1. Clone este repositório:  
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/LucasHapr/Transcricao_de_imagens
    ```  
 2. Instale as dependências:  
    ```sh
@@ -39,10 +38,6 @@ Antes de executar o projeto, certifique-se de ter:
    ```sh
    python main.py --image caminho/para/imagem.jpg
    ```  
-5. Para processar várias imagens de uma vez, use:  
-   ```sh
-   python main.py --folder caminho/para/pasta/
-   ```  
 
 ## 🖼️ Exemplo de Uso  
 Entrada:  
@@ -52,26 +47,6 @@ Saída (texto extraído):
 ```
 Este é um exemplo de transcrição de texto a partir de uma imagem.
 ```  
-
-## 🔄 Contribuindo  
-Se quiser contribuir com melhorias para o projeto:  
-1. Faça um **fork** do repositório.  
-2. Crie um **branch** para a nova funcionalidade:  
-   ```sh
-   git checkout -b minha-nova-feature
-   ```  
-3. Faça o commit das alterações:  
-   ```sh
-   git commit -m "Adiciona nova funcionalidade X"
-   ```  
-4. Envie para o GitHub:  
-   ```sh
-   git push origin minha-nova-feature
-   ```  
-5. Abra um **Pull Request**! 🚀  
-
-## 📜 Licença  
-Este projeto está licenciado sob a **MIT License** – fique à vontade para usar e contribuir!  
 
 ---
 💡 **Dica:** Se precisar de suporte ou encontrar um bug, abra uma issue! 🚀  
