@@ -1,52 +1,47 @@
-# 📜 Image-to-Text Transcription with Google AI  
+# 📜 Transcrição de Imagens para Texto com Google Gemini AI  
 
-Este projeto utiliza a inteligência artificial do Google para converter imagens em texto de forma eficiente e precisa. Com a **Google Cloud Vision API**, é possível extrair textos de imagens como documentos escaneados, placas, recibos e outros.  
+Este projeto utiliza a **API do Google Gemini** para transcrever textos presentes em imagens de forma eficiente e precisa. Com poucos comandos, é possível enviar uma imagem e obter sua transcrição de maneira automática.  
 
 ## 🚀 Funcionalidades  
-✅ **Reconhecimento de texto em imagens** com alta precisão.  
-✅ **Suporte para múltiplos idiomas** disponibilizados pela Google AI.  
-✅ **Processamento de várias imagens em lote** para maior eficiência.  
-✅ **Exportação dos textos extraídos** em `.txt`, `.csv` ou outros formatos.  
-✅ **Configuração flexível** para ajustar parâmetros de OCR.  
+✅ **Reconhecimento de texto em imagens** usando IA avançada.  
+✅ **Suporte a múltiplos formatos de imagem** (JPEG, PNG, etc.).  
+✅ **Interação via chat** para comandos adicionais.  
+✅ **Fácil configuração e uso com poucas linhas de código**.  
 
 ## 🛠️ Tecnologias Utilizadas  
 - **Python** 🐍  
-- **Google Cloud Vision API** 🧠  
-- **Pillow** 📷 (manipulação de imagens)  
-- **Tesseract OCR** (opcional, como fallback)  
+- **Google Gemini AI** 🧠 (Google Generative AI)  
+- **Dotenv** 🔑 (para gerenciamento de credenciais)  
 
 ## 📌 Pré-requisitos  
 Antes de executar o projeto, certifique-se de ter:  
 - **Python 3.8+** instalado.  
-- Uma conta na **Google Cloud Platform** com a **Vision API** ativada.  
-- Um arquivo de credenciais JSON da API.  
+- Uma **chave de API do Google Gemini**.  
 
-## 🚀 Como Usar  
-1. Clone este repositório:  
+## 🔧 Configuração  
+1. **Clone este repositório:**  
    ```sh
-   git clone https://github.com/LucasHapr/Transcricao_de_imagens
+   git clone https://github.com/LucasHapr/Transcricao_de_imagens/
    ```  
-2. Instale as dependências:  
+2. **Instale as dependências:**  
    ```sh
    pip install -r requirements.txt
    ```  
-3. Configure a autenticação da **Google Cloud Vision API** adicionando o caminho do JSON de credenciais:  
-   ```sh
-   export GOOGLE_APPLICATION_CREDENTIALS="caminho/para/seu/arquivo.json"
-   ```  
-4. Execute o script para processar uma imagem:  
-   ```sh
-   python main.py --image caminho/para/imagem.jpg
+3. **Configure a chave da API** no arquivo `.env`:  
+   ```env
+   GOOGLE_API_KEY=SUA_CHAVE_AQUI
    ```  
 
 ## 🖼️ Exemplo de Uso  
-Entrada:  
-(imagem)
-
-Saída (texto extraído):  
-```
-Este é um exemplo de transcrição de texto a partir de uma imagem.
-```  
+1. **Coloque a imagem no diretório do projeto** (exemplo: `2.png`).  
+2. **Execute o script para transcrição:**  
+   ```sh
+   python main.py
+   ```  
+3. **Saída esperada:**  
+   ```
+   Texto extraído da imagem: "Exemplo de texto transcrito..."
+   ```  
 
 ---
 💡 **Dica:** Se precisar de suporte ou encontrar um bug, abra uma issue! 🚀  
